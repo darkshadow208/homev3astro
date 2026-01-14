@@ -2,12 +2,15 @@
 import { Image } from 'astro:assets';
 import logoVerde from '../assets/images/logo-verde.webp';
 import flagColombia from '../assets/images/colombia.webp';
-import iconFb from '../assets/images/icon-facebook.webp';
-import iconIg from '../assets/images/icon-instagram.webp';
-import iconTk from '../assets/images/icon-tiktok.webp';
-import iconLi from '../assets/images/icon-linkedin.webp';
-import iconYt from '../assets/images/icon-youtube.webp';
-import iconWa from '../assets/images/icon-whatsapp.webp';
+import iconFb from '../assets/images/Facebook.webp';
+import iconIg from '../assets/images/instagram.webp';
+import iconTk from '../assets/images/TikTock.webp';
+import iconLi from '../assets/images/Link.webp';
+import iconYt from '../assets/images/youtube.webp';
+import iconWa from '../assets/images/whatsapp.webp';
+import logoVerde from '../assets/images/LogoSanAgustínGris.webp';
+import iconPh from '../assets/images/Telefono.webp';
+import iconPifrom  from '../assets/images/Pinterest _1.webp';
 ---
 
 <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
@@ -26,18 +29,47 @@ import iconWa from '../assets/images/icon-whatsapp.webp';
     <div class="flex-1 overflow-y-auto py-8 px-8 space-y-10">
         
         <!-- Navigation Links -->
-       <nav class="flex flex-col space-y-6">
+       <nav class="flex flex-col space-y-4">
     <a href="https://www.tusanagustin.com/" class="text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer">Inicio</a>
     
-    <a href="https://www.tusanagustin.com/servicios" class="text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer">Eventos</a>
+    <!-- Eventos Accordion -->
+    <details class="group">
+        <summary class="flex items-center justify-between text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer list-none">
+            Eventos
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-open:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="pl-4 mt-2 space-y-2 border-l-2 border-[#4EAC9F]/30 ml-2">
+            <a href="https://www.tusanagustin.com/eventos/bodas" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Bodas</a>
+            <a href="https://www.tusanagustin.com/eventos/bodas-destino" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Bodas Destino</a>
+            <a href="https://www.tusanagustin.com/eventos/15-anos" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Quinces Años</a>
+            <a href="https://www.tusanagustin.com/eventos/corporativos" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Corporativos</a>
+            <a href="https://www.tusanagustin.com/eventos/sociales" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Sociales</a>
+        </div>
+    </details>
     
-    <a href="https://www.tusanagustin.com/servicios" class="text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer">Servicios</a>
+    <!-- Servicios Accordion -->
+    <details class="group">
+        <summary class="flex items-center justify-between text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer list-none">
+            Servicios
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-open:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="pl-4 mt-2 space-y-2 border-l-2 border-[#4EAC9F]/30 ml-2">
+            <a href="https://www.tusanagustin.com/servicios/catering" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Catering</a>
+            <a href="https://www.tusanagustin.com/servicios/decoracion" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Decoración</a>
+            <a href="https://www.tusanagustin.com/servicios/event-wedding-planner" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Event & Wedding Planner</a>
+            <a href="https://www.tusanagustin.com/servicios/lugares" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Lugares para eventos</a>
+            <a href="https://www.tusanagustin.com/servicios/artistas" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Artistas y espectáculos</a>
+            <a href="https://www.tusanagustin.com/servicios/fotografia" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Fotografía y video</a>
+            <a href="https://www.tusanagustin.com/servicios/audiovisuales" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Ayudas audiovisuales</a>
+            <a href="https://www.tusanagustin.com/servicios/carros-antiguos" class="block text-xl text-gray-600 hover:text-[#4EAC9F] py-1">Carros antiguos</a>
+        </div>
+    </details>
     
     <a href="https://www.tusanagustin.com/blog" class="text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer">Blog</a>
     
-    <a href="https://www.tusanagustin.com/quienes-somos" class="text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer">Nosotros</a>
+    <a href="https://www.tusanagustin.com/bodas-destino" class="text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer">Bodas de Destino</a>
     
-    <a href="https://www.tusanagustin.com/contacto" class="text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer">Contacto</a>
+    <a href="https://www.tusanagustin.com/quienes-somos" class="text-3xl font-serif text-[#333638] hover:text-[#4EAC9F] hover:pl-4 transition-all duration-300 cursor-pointer">Nosotros</a>
 </nav>
 
         <hr class="border-gray-100">

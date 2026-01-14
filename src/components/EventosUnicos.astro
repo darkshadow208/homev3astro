@@ -1,7 +1,5 @@
 ---
 import ServiceCard from './ui/ServiceCard.astro';
-import imgBodasUnique from '../assets/images/fotografia.webp';
-import imgQuinceUnique from '../assets/images/fiesta-quince.webp';
 import imgEmpresarialesUnique from '../assets/images/0j8a0641.webp';
 ---
 
@@ -25,18 +23,18 @@ import imgEmpresarialesUnique from '../assets/images/0j8a0641.webp';
                 <div class="swiper-wrapper">
                    <ServiceCard 
                         title="Bodas" 
-                        image={imgBodasUnique}
+                        image="/images/Boda-destino.avif"
                         url="https://www.tusanagustin.com/servicios/bodas"
                         loading="eager"
                         fetchpriority="high"
                     />
                     <ServiceCard 
                         title="15 años" 
-                        image={imgQuinceUnique}
+                        image="/images/0J8A6511.jpg"
                         url="https://www.tusanagustin.com/servicios/15-anos"
                     />
                     <ServiceCard 
-                        title="Eventos empresariales" 
+                        title="Eventos Corporativos" 
                         image={imgEmpresarialesUnique}
                         url="https://www.tusanagustin.com/servicios/eventos-empresariales"
                     />
@@ -44,16 +42,16 @@ import imgEmpresarialesUnique from '../assets/images/0j8a0641.webp';
                     {/* Duplicates for Loop */}
                     <ServiceCard 
                         title="Bodas" 
-                        image={imgBodasUnique}
+                        image="/images/Boda-destino.avif"
                         url="https://www.tusanagustin.com/servicios/bodas"
                     />
                     <ServiceCard 
                         title="15 años" 
-                        image={imgQuinceUnique}
+                        image="/images/0J8A6511.jpg"
                         url="https://www.tusanagustin.com/servicios/15-anos"
                     />
                     <ServiceCard 
-                        title="Eventos empresariales" 
+                        title="Eventos Corporativos" 
                         image={imgEmpresarialesUnique}
                         url="https://www.tusanagustin.com/servicios/eventos-empresariales"
                     />
